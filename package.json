@@ -1,0 +1,26 @@
+{
+  "name": "multi-define-webpack-plugin",
+  "version": "0.0.1",
+  "description": "multi-define-webpack-plugin",
+  "main": "dist/index.js",
+  "repository": "git@github.com:jaluik/multi-define-webpack-plugin.git",
+  "author": "jaluik <cqzhengmouren@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "tsup src/index.ts --watch --dts",
+    "build": "tsup src/index.ts --dts -clean"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "tsup": "^5.11.13",
+    "typescript": "^4.5.5",
+    "webpack": "^5.69.1"
+  },
+  "peerDependencies": {
+    "webpack": "^5.1.0"
+  }
+}
